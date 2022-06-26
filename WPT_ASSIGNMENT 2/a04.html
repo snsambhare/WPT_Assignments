@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>question 4</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+    <script>
+        $(document).ready(()=>{
+            console.log("page loaded");
+            $('#pin').blur(()=>{
+                console.log("blur event happend");
+
+                let input = {pin:(#pin).val()}  
+
+                let parameterstothefunction=
+                data : input ,
+                url : 'http://localhost:567/getareaname',
+                type: 'get',
+                datatype: 'json',
+
+                success: function (datafromserver) 
+                console.log
+            })
+
+        })
+
+    </script>
+</head>
+<body>
+    <input type="number" id="pin" name="pin" placeholder="pincode"><br>
+    <input type="text" id="area" name="area" placeholder="area"><br>
+    
+</body>
+</html>
